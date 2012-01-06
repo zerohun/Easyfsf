@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Younghun Choi"]
   s.email       = ["choi0hun@gmail.com"]
   s.homepage    = "http://zerohun.wordpress.com/2012/01/06/easyfsf/"
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = "Simplie using Fusion chart free for ruby on rails"
+  s.description = "one helper method render chart"
 
   s.rubyforge_project = "easyfsf"
 
