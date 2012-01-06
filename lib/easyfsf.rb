@@ -1,9 +1,7 @@
 require "easyfsf/version"
 require "easyfsf/application_helper" if defined? Rails
 require "builder"
-require "rubygems"
-require "active_support/core_ext/object/blank"
-require "active_support/core_ext/string/output_safety"
+
 
 module Easyfsf
 
