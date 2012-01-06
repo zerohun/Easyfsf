@@ -5,7 +5,18 @@ require "builder"
 
 module Easyfsf
 
-  #render single chart or multi chart depends on parameters
+  #To render single chart or multi chart, call <tt>render_sm_chart</tt>
+  #Depends on parameter it render single data chart or multi data chart
+  #You can use this method as helper
+  #
+  #<%= render_sm_chart("a", "Pie2D", ['a','b','c'], [1,2,3]) %>
+  #
+  #<%= render_sm_chart("b", "Column3D", ['a','b','c'], [{:seriesName => "se1", :color => "FF0000",:value_list => [1,2,3]}, {:seriesName => "se2", :color => "F660AB", :value_list => [3,4,5]}]) %>
+  #<%= render_sm_chart("b", "Column3D", ['a','b','c'], [{:seriesName => "se1", :color => "FF0000",:value_list => [1,2,3]}, {:seriesName => "se2", :color => "F660AB", :value_list => [3,4,5]}],{}, 500, 400, true) %>
+  #
+  #for detail infomation visit http://zerohun.wordpress.com/2012/01/06/easyfsf/
+  #for the options parameter visit http://docs.fusioncharts.com/charts/
+  
   def render_sm_chart(chart_id, chart_type, category, datasets, options = {}, chart_width = 700, chart_height = 500, show_total = false)
     
     options = options.clone if options.present?

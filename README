@@ -1,0 +1,20 @@
+Simplize using Fusionchartfree for ruby on rails
+
+
+First you should generate swf files
+
+rails g easyfsf
+
+
+and then you can render chart by using helper method
+
+example
+
+
+<%= render_sm_chart("a", "Pie2D", ['a','b','c'], [1,2,3]) %>
+<%= render_sm_chart("b", "Column3D", ['a','b','c'], [{:seriesName => "se1", :color => "FF0000",:value_list => [1,2,3]}, {:seriesName => "se2", :color => "F660AB", :value_list => [3,4,5]}]) %>
+
+
+if you want better example including some images, visit  http://zerohun.wordpress.com/2012/01/06/easyfsf/
+
+
