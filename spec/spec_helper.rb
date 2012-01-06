@@ -1,0 +1,2 @@
+require 'easyfsf'
+include Easyfsf
