@@ -1,7 +1,12 @@
 Simplize using Fusionchartfree for ruby on rails
 
 
-First you should generate swf files
+First you need to edit Gemfile in your application
+
+gem 'easyfsf'
+
+
+generate swf files
 
 rails g easyfsf
 
